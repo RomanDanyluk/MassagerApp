@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1C5F1B1023B6A52A002FB688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F1B0E23B6A52A002FB688 /* Main.storyboard */; };
 		1C5F1B1223B6A52E002FB688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1123B6A52E002FB688 /* Assets.xcassets */; };
 		1C5F1B1523B6A52E002FB688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1323B6A52E002FB688 /* LaunchScreen.storyboard */; };
+		1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */; };
+		787493A6D7167457FC126876 /* Pods_Massager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,12 @@
 		1C5F1B1123B6A52E002FB688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C5F1B1423B6A52E002FB688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C5F1B1623B6A52E002FB688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5F1B1D23B6A63D002FB688 /* Massager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Massager-Bridging-Header.h"; sourceTree = "<group>"; };
+		1C5F1B1E23B6A63E002FB688 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		697FB933C494BC8C782D6B88 /* Pods-Massager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.release.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.release.xcconfig"; sourceTree = "<group>"; };
+		99A94647FA7330F374B6CE51 /* Pods-Massager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.debug.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.debug.xcconfig"; sourceTree = "<group>"; };
+		E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Massager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787493A6D7167457FC126876 /* Pods_Massager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1C5F1B0723B6A52A002FB688 /* Massager */,
 				1C5F1B0623B6A52A002FB688 /* Products */,
+				20C549DB164A0951C5A2669F /* Pods */,
+				727A4F4333E1C55C1EDFA988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,7 @@
 		1C5F1B0723B6A52A002FB688 /* Massager */ = {
 			isa = PBXGroup;
 			children = (
+				1C5F1B1C23B6A609002FB688 /* Supporting files */,
 				1C5F1B0823B6A52A002FB688 /* AppDelegate.swift */,
 				1C5F1B0A23B6A52A002FB688 /* SceneDelegate.swift */,
 				1C5F1B0C23B6A52A002FB688 /* ViewController.swift */,
@@ -67,6 +79,33 @@
 			path = Massager;
 			sourceTree = "<group>";
 		};
+		1C5F1B1C23B6A609002FB688 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				1C5F1B1E23B6A63E002FB688 /* SWRevealViewController.h */,
+				1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */,
+				1C5F1B1D23B6A63D002FB688 /* Massager-Bridging-Header.h */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		20C549DB164A0951C5A2669F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A94647FA7330F374B6CE51 /* Pods-Massager.debug.xcconfig */,
+				697FB933C494BC8C782D6B88 /* Pods-Massager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		727A4F4333E1C55C1EDFA988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C5F1B1923B6A52E002FB688 /* Build configuration list for PBXNativeTarget "Massager" */;
 			buildPhases = (
+				0E064B98182A833F8D6D914E /* [CP] Check Pods Manifest.lock */,
 				1C5F1B0123B6A52A002FB688 /* Sources */,
 				1C5F1B0223B6A52A002FB688 /* Frameworks */,
 				1C5F1B0323B6A52A002FB688 /* Resources */,
+				E4D55EEAF429D1F164B630FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +140,7 @@
 				TargetAttributes = {
 					1C5F1B0423B6A52A002FB688 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -133,6 +175,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E064B98182A833F8D6D914E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Massager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D55EEAF429D1F164B630FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C5F1B0123B6A52A002FB688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +225,7 @@
 				1C5F1B0D23B6A52A002FB688 /* ViewController.swift in Sources */,
 				1C5F1B0923B6A52A002FB688 /* AppDelegate.swift in Sources */,
 				1C5F1B0B23B6A52A002FB688 /* SceneDelegate.swift in Sources */,
+				1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +367,10 @@
 		};
 		1C5F1B1A23B6A52E002FB688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A94647FA7330F374B6CE51 /* Pods-Massager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3AATHL8DV;
 				INFOPLIST_FILE = Massager/Info.plist;
@@ -293,6 +380,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rokimjour.Massager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Massager/Supporting files/Massager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +389,10 @@
 		};
 		1C5F1B1B23B6A52E002FB688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697FB933C494BC8C782D6B88 /* Pods-Massager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3AATHL8DV;
 				INFOPLIST_FILE = Massager/Info.plist;
@@ -311,6 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rokimjour.Massager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Massager/Supporting files/Massager-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
