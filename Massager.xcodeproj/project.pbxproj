@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		1C5F1B0923B6A52A002FB688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F1B0823B6A52A002FB688 /* AppDelegate.swift */; };
 		1C5F1B0B23B6A52A002FB688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F1B0A23B6A52A002FB688 /* SceneDelegate.swift */; };
-		1C5F1B0D23B6A52A002FB688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F1B0C23B6A52A002FB688 /* ViewController.swift */; };
 		1C5F1B1023B6A52A002FB688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F1B0E23B6A52A002FB688 /* Main.storyboard */; };
 		1C5F1B1223B6A52E002FB688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1123B6A52E002FB688 /* Assets.xcassets */; };
 		1C5F1B1523B6A52E002FB688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1323B6A52E002FB688 /* LaunchScreen.storyboard */; };
 		1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */; };
+		1CFA322C23BA192A001F72A9 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA322B23BA192A001F72A9 /* ChatVC.swift */; };
+		1CFA322F23BA195C001F72A9 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA322E23BA195C001F72A9 /* ChannelVC.swift */; };
 		787493A6D7167457FC126876 /* Pods_Massager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +22,6 @@
 		1C5F1B0523B6A52A002FB688 /* Massager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5F1B0823B6A52A002FB688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C5F1B0A23B6A52A002FB688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C5F1B0C23B6A52A002FB688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C5F1B0F23B6A52A002FB688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C5F1B1123B6A52E002FB688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C5F1B1423B6A52E002FB688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,8 @@
 		1C5F1B1D23B6A63D002FB688 /* Massager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Massager-Bridging-Header.h"; sourceTree = "<group>"; };
 		1C5F1B1E23B6A63E002FB688 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1CFA322B23BA192A001F72A9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		1CFA322E23BA195C001F72A9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		697FB933C494BC8C782D6B88 /* Pods-Massager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.release.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.release.xcconfig"; sourceTree = "<group>"; };
 		99A94647FA7330F374B6CE51 /* Pods-Massager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.debug.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.debug.xcconfig"; sourceTree = "<group>"; };
 		E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Massager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,14 +69,16 @@
 		1C5F1B0723B6A52A002FB688 /* Massager */ = {
 			isa = PBXGroup;
 			children = (
-				1C5F1B1C23B6A609002FB688 /* Supporting files */,
+				1CFA322A23BA18EC001F72A9 /* Model */,
+				1CFA322923BA18E0001F72A9 /* View */,
+				1CFA322823BA18D4001F72A9 /* Controller */,
 				1C5F1B0823B6A52A002FB688 /* AppDelegate.swift */,
 				1C5F1B0A23B6A52A002FB688 /* SceneDelegate.swift */,
-				1C5F1B0C23B6A52A002FB688 /* ViewController.swift */,
 				1C5F1B0E23B6A52A002FB688 /* Main.storyboard */,
 				1C5F1B1123B6A52E002FB688 /* Assets.xcassets */,
 				1C5F1B1323B6A52E002FB688 /* LaunchScreen.storyboard */,
 				1C5F1B1623B6A52E002FB688 /* Info.plist */,
+				1C5F1B1C23B6A609002FB688 /* Supporting files */,
 			);
 			path = Massager;
 			sourceTree = "<group>";
@@ -87,6 +91,29 @@
 				1C5F1B1D23B6A63D002FB688 /* Massager-Bridging-Header.h */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		1CFA322823BA18D4001F72A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CFA322B23BA192A001F72A9 /* ChatVC.swift */,
+				1CFA322E23BA195C001F72A9 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1CFA322923BA18E0001F72A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CFA322A23BA18EC001F72A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		20C549DB164A0951C5A2669F /* Pods */ = {
@@ -222,10 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C5F1B0D23B6A52A002FB688 /* ViewController.swift in Sources */,
+				1CFA322C23BA192A001F72A9 /* ChatVC.swift in Sources */,
 				1C5F1B0923B6A52A002FB688 /* AppDelegate.swift in Sources */,
 				1C5F1B0B23B6A52A002FB688 /* SceneDelegate.swift in Sources */,
 				1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */,
+				1CFA322F23BA195C001F72A9 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
