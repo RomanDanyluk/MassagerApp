@@ -19,6 +19,7 @@
 		1CFA323423BA310F001F72A9 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA323323BA310F001F72A9 /* Constans.swift */; };
 		1CFA323623BA50C5001F72A9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA323523BA50C5001F72A9 /* LoginVC.swift */; };
 		1CFA323823BA5339001F72A9 /* CreateAccVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA323723BA5339001F72A9 /* CreateAccVC.swift */; };
+		1CFA323B23BA868A001F72A9 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA323A23BA868A001F72A9 /* AuthServices.swift */; };
 		787493A6D7167457FC126876 /* Pods_Massager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		1CFA323323BA310F001F72A9 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		1CFA323523BA50C5001F72A9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1CFA323723BA5339001F72A9 /* CreateAccVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccVC.swift; sourceTree = "<group>"; };
+		1CFA323A23BA868A001F72A9 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		697FB933C494BC8C782D6B88 /* Pods-Massager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.release.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.release.xcconfig"; sourceTree = "<group>"; };
 		99A94647FA7330F374B6CE51 /* Pods-Massager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.debug.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.debug.xcconfig"; sourceTree = "<group>"; };
 		E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Massager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 		1C5F1B0723B6A52A002FB688 /* Massager */ = {
 			isa = PBXGroup;
 			children = (
+				1CFA323923BA8648001F72A9 /* Services */,
 				1CFA323223BA30DE001F72A9 /* Utilities */,
 				1CFA322A23BA18EC001F72A9 /* Model */,
 				1CFA322923BA18E0001F72A9 /* View */,
@@ -134,6 +137,14 @@
 				1CFA323323BA310F001F72A9 /* Constans.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1CFA323923BA8648001F72A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1CFA323A23BA868A001F72A9 /* AuthServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		20C549DB164A0951C5A2669F /* Pods */ = {
@@ -274,6 +285,7 @@
 				1C5F1B0923B6A52A002FB688 /* AppDelegate.swift in Sources */,
 				1CFA323623BA50C5001F72A9 /* LoginVC.swift in Sources */,
 				1CFA323123BA1F68001F72A9 /* GradientView.swift in Sources */,
+				1CFA323B23BA868A001F72A9 /* AuthServices.swift in Sources */,
 				1C5F1B0B23B6A52A002FB688 /* SceneDelegate.swift in Sources */,
 				1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */,
 				1CFA323423BA310F001F72A9 /* Constans.swift in Sources */,
