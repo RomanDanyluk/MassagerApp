@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  CreateAccVC.swift
 //  Massager
 //
 //  Created by Romaha  on 30.12.2019.
@@ -8,19 +8,20 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class CreateAccVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        
     }
+    
 
     @IBAction func closePressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: UNWIND, sender: nil)
     }
     
-    @IBAction func createAccBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_CREATE_ACC, sender: nil)
-    }
+    
+    
+
 }
