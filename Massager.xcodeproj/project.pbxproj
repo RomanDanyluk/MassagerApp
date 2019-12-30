@@ -15,6 +15,7 @@
 		1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */; };
 		1CFA322C23BA192A001F72A9 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA322B23BA192A001F72A9 /* ChatVC.swift */; };
 		1CFA322F23BA195C001F72A9 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA322E23BA195C001F72A9 /* ChannelVC.swift */; };
+		1CFA323123BA1F68001F72A9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA323023BA1F68001F72A9 /* GradientView.swift */; };
 		787493A6D7167457FC126876 /* Pods_Massager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		1C5F1B1F23B6A63F002FB688 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1CFA322B23BA192A001F72A9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		1CFA322E23BA195C001F72A9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		1CFA323023BA1F68001F72A9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		697FB933C494BC8C782D6B88 /* Pods-Massager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.release.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.release.xcconfig"; sourceTree = "<group>"; };
 		99A94647FA7330F374B6CE51 /* Pods-Massager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.debug.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.debug.xcconfig"; sourceTree = "<group>"; };
 		E12E0AF3A71651B7C82802EF /* Pods_Massager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Massager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 		1CFA322923BA18E0001F72A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1CFA323023BA1F68001F72A9 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				1CFA322C23BA192A001F72A9 /* ChatVC.swift in Sources */,
 				1C5F1B0923B6A52A002FB688 /* AppDelegate.swift in Sources */,
+				1CFA323123BA1F68001F72A9 /* GradientView.swift in Sources */,
 				1C5F1B0B23B6A52A002FB688 /* SceneDelegate.swift in Sources */,
 				1C5F1B2023B6A63F002FB688 /* SWRevealViewController.m in Sources */,
 				1CFA322F23BA195C001F72A9 /* ChannelVC.swift in Sources */,
